@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 from dataLoad import prepare_for_rnn, create_gesture_database
 
-# 2. Load
+# RNN
 data_dir = "combined"
 csv_file = "gesture_database.csv"
 gesture_df = create_gesture_database(data_dir, csv_file)
@@ -69,3 +69,4 @@ if X_test.size > 0 and y_test_cat is not None:
     print("Confusion matrix:\n", confusion_matrix(y_test, y_pred))
 else:
     print("No test data")
+    
